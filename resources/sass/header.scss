@@ -1,0 +1,49 @@
+header#main-header {
+    border-bottom: 3px solid $main-color;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: $header-h;
+
+        & > a {
+            display: flex;
+            height: 100%;
+            img.logo {
+                width: 200px;
+            }
+        }
+
+        nav ul {
+            display: flex;
+            height: 100%;
+            list-style: none;
+
+            li {
+                a {
+                    font-size: 14px;
+                    font-weight: bold;
+                    font-family: "Roboto", Arial, Helvetica, sans-serif;
+                    color: #414143;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    height: 100%;
+                    padding: 0 15px;
+
+                    &:hover,
+                    &.active {
+                        color: $main-color;
+                    }
+                }
+
+                &:last-child a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

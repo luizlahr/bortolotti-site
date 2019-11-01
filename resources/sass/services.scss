@@ -1,0 +1,96 @@
+section.services {
+    background-color: #232a34;
+    color: #808489;
+
+    .container {
+        display: flex;
+        padding: 95px 0;
+
+        h1 {
+            color: #fff;
+        }
+
+        span.divider {
+            margin-bottom: 30px;
+        }
+
+        & > p {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            list-style: none;
+            margin-top: 100px;
+
+            li {
+                position: relative;
+                border: 1px solid #808489;
+                padding: 20px;
+                height: 350px;
+
+                &:hover {
+                    border-color: $main-color;
+
+                    h2 {
+                        color: $main-color;
+                        transform: translate(0, -25px);
+                        transition: all 0.4s ease;
+                    }
+
+                    p {
+                        opacity: 1;
+                        transform: translate(0, 70px);
+                        transition: all 0.4s ease;
+                    }
+                }
+
+                .single-service-wrapper {
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    height: 100%;
+                }
+
+                h2 {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(0, 110px);
+                    transition: all 0.4s ease;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    text-align: center;
+                    width: 100%;
+                    color: #808489;
+                    font-size: 18px;
+
+                    .icon {
+                        font-size: 44px;
+                        width: 80px;
+                        background: #232a34;
+                        margin-bottom: 20px;
+                        border-radius: 50%;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                    color: #fff;
+                    transform: translate(0, 300px);
+                    opacity: 0;
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+    }
+}
