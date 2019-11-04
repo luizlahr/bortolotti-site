@@ -1,0 +1,78 @@
+section.contact {
+    display: flex;
+    margin-top: 50px;
+
+    .container {
+        h1.title {
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: grid;
+            width: 100%;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "name email"
+                "subject subject"
+                "message message"
+                "actions actions";
+
+            .form-control#name {
+                grid-area: name;
+            }
+            .form-control#email {
+                grid-area: email;
+            }
+            .form-control#subject {
+                grid-area: subject;
+            }
+            .form-control#message {
+                grid-area: message;
+            }
+            .actions {
+                display: flex;
+                justify-content: flex-start;
+                grid-area: actions;
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 40px;
+                    height: 42px;
+                    border: 1px solid $main-color;
+                    background: $main-color;
+                    font-size: 14px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    transition: all 0.4s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: transparent;
+                        color: $main-color;
+                        transition: all 0.4s ease;
+                    }
+                }
+            }
+
+            .form-control {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 14px;
+
+                width: 100%;
+                border: 1px solid #dfdfdf;
+                height: 50px;
+                padding: 15px 20px;
+            }
+
+            textarea.form-control {
+                height: auto;
+            }
+        }
+    }
+}

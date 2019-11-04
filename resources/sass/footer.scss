@@ -1,0 +1,55 @@
+footer {
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 50px 0;
+    margin-top: 80px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            width: 180px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        ul {
+            display: flex;
+            margin: 20px 0;
+            list-style: none;
+
+            li a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                color: $facebook-color;
+                border: 1px solid $facebook-color;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: $facebook-color;
+                    color: #fff;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        p {
+            color: #ddd;
+            strong {
+                color: $main-color;
+            }
+        }
+    }
+}

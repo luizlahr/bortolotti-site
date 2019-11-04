@@ -1,0 +1,72 @@
+section.experience {
+    display: flex;
+    margin-top: 80px;
+    background-image: url("img/bg_experience.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+    .overlay {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .container {
+        padding: 140px 0;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        h1.title {
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        a.btn-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 42px;
+            color: #fff;
+            border: 1px solid $main-color;
+            background: transparent;
+            width: max-content;
+            padding: 0 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            position: relative;
+            transition: color 0.2s;
+            transform: translateZ(0);
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                z-index: -1;
+                background: $main-color;
+                transform: scaleX(0);
+                transition-property: transform;
+                transform-origin: 0% 50%;
+                transition: 0.2s ease-out;
+            }
+            &:hover:before {
+                transform: scaleX(1);
+                transition: all 0.5s ease;
+                transition-timing-function: cubic-bezier(
+                    0.52,
+                    1.64,
+                    0.37,
+                    0.66
+                );
+            }
+        }
+    }
+}

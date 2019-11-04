@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about" id="about-anchor">
     <div class="container">
         <h1 class="title">
             Sobre a Bortolotti Audio

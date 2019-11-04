@@ -9,4 +9,5 @@
 @include("layouts.partials.brands")
 @include("layouts.partials.localization")
 @include("layouts.partials.contact")
+@include("layouts.partials.footer")
 @endsection

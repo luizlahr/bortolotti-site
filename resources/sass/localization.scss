@@ -1,0 +1,88 @@
+section.localization {
+    display: flex;
+
+    a[href^="tel:"] {
+        text-decoration: none;
+        color: $main-color;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .container {
+        flex-direction: row;
+
+        h1.title {
+            justify-content: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+
+                li {
+                    display: flex;
+                    margin-bottom: 30px;
+
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        color: #fff;
+                        background-color: $main-color;
+                        border: 1px solid $main-color;
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        padding: 15px;
+                        margin-right: 20px;
+                    }
+
+                    &:hover {
+                        .icon {
+                            color: $main-color;
+                            background-color: transparent;
+                            border: 1px solid $main-color;
+                        }
+
+                        p strong {
+                            color: $main-color;
+                        }
+                    }
+
+                    p {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 2;
+
+                        strong {
+                            font-weight: bold;
+                            color: #222;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        .map-area {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            .map {
+                display: flex;
+                height: 500px;
+                width: 100%;
+                background: #f9f9f9;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-<header id="main-header">
+<header id="main-header" id="home-anchor">
     <div class="container">
         <a href="">
             <img src="{{ asset("/img/logo.svg") }}" alt="Logo" class="logo">
@@ -9,13 +9,13 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Sobre</a>
+                    <a href="#about-anchor">Sobre</a>
                 </li>
                 <li>
-                    <a href="#">Serviços</a>
+                    <a href="#services-anchor">Serviços</a>
                 </li>
                 <li>
-                    <a href="#">Contato</a>
+                    <a href="#localization-anchor">Contato</a>
                 </li>
             </ul>
         </nav>
