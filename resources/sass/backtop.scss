@@ -1,0 +1,56 @@
+a#backTop {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+
+    height: 50px;
+    width: 50px;
+    bottom: 40px;
+    right: 40px;
+
+    background-color: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+    font-size: 32px;
+    color: #fff;
+
+    // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+    &::after {
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 110%;
+        height: 10px;
+        width: 90%;
+        opacity: 1;
+        background: -webkit-radial-gradient(
+            center,
+            ellipse,
+            rgba(0, 0, 0, 0.25) 0%,
+            rgba(0, 0, 0, 0) 80%
+        );
+        background: radial-gradient(
+            ellipse at center,
+            rgba(0, 0, 0, 0.25) 0%,
+            rgba(0, 0, 0, 0) 80%
+        );
+    }
+
+    &:hover {
+        background: #fff;
+        color: $main-color;
+    }
+
+    &.visible {
+        z-index: 100;
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.5s ease;
+    }
+}

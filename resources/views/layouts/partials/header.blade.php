@@ -21,3 +21,41 @@
         </nav>
     </div>
 </header>
+
+@push("scripts")
+    <script>
+    window.onscroll = function() {stickyHeader()};
+
+    // Get the header
+    var header = document.getElementById("main-header");
+    var backtop = document.getElementById("backTop");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyHeader() {
+        if (window.pageYOffset-70 > sticky) {
+            header.classList.add("sticky");
+            backtop.classList.add("visible");
+        } else {
+            header.classList.remove("sticky");
+            backtop.classList.remove("visible");
+        }
+    }
+
+    $('li a').click(function(e){
+        e.preventDefault();
+
+        if ($(this).attr('href') == "#") {
+            topFunction();
+        }
+
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        },1000);
+        return false;
+    });
+</script>
+@endpush
+

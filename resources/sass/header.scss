@@ -20,6 +20,7 @@ header#main-header {
         nav ul {
             display: flex;
             height: 100%;
+            margin: 0;
             list-style: none;
 
             li {
@@ -46,4 +47,20 @@ header#main-header {
             }
         }
     }
+}
+
+.sticky {
+    position: fixed;
+    top: -70px;
+    transform: translateY(70px);
+    transition: transform 0.8s ease;
+    transition-delay: 0.2s;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .banner {
+    margin-top: $header-h;
 }

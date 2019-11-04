@@ -31,8 +31,7 @@
     $(function() {
         $("#bannerCarousel").carousel({
             ride: true,
-            interval: 2000,
-            pause: false
+            interval: 8000,
         });
     })
 </script>
