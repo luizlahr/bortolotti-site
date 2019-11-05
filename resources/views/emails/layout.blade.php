@@ -18,10 +18,10 @@
                         <thead>
                             <tr>
                                 <th align="center">
-                                    <img src="{{ $message->embed(public_path() . "/img/logo.svg") }}" alt="Bortolotti
-                                    Audio" style="display: block; width: 220px;">
-                                    {{-- <img src="{{ asset("/img/logo.svg") }}" alt="Bortolotti Audio"
-                                    style="display: block; width: 220px;"> --}}
+                                    <h2 style="margin: 0; color: #444;">
+                                        Bortolotti
+                                        <span style="color:#f08467;">Audio</span>
+                                    </h2>
                                 </th>
                             </tr>
                         </thead>
@@ -46,6 +46,12 @@
                         </tbody>
                     </table>
                     <br><br><br>
+                    <img data-imagetype="External"
+                        src="/actions/ei?u=http%3A%2F%2Fwww.linkedin.com%2Femimp%2Fip_TVRWaE5qY3dMV3N5YUhNMU9IQm9MV054OlpXMWhhV3hmYW05aWMxOXZjR1Z1WDJOaGJtUnBaR0YwWlhOZmMzVnRiV0Z5ZVY5emFXNW5iR1ZmTURFPTo%3D.gif&amp;d=2019-11-05T20%3A04%3A56.948Z"
+                        originalsrc="http://www.linkedin.com/emimp/ip_TVRWaE5qY3dMV3N5YUhNMU9IQm9MV054OlpXMWhhV3hmYW05aWMxOXZjR1Z1WDJOaGJtUnBaR0YwWlhOZmMzVnRiV0Z5ZVY5emFXNW5iR1ZmTURFPTo=.gif"
+                        data-connectorsauthtoken="1" data-imageproxyendpoint="/actions/ei" data-imageproxyid="" alt=""
+                        role="presentation"
+                        style="outline:none; color:#FFFFFF; text-decoration:none; width:1px; height:1px">
                 </td>
             </tr>
         </tbody>

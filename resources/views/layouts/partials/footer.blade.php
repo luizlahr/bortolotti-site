@@ -5,7 +5,7 @@
         </div>
         <ul>
             <li>
-                <a href="" class="facebook">
+                <a href="http://www.facebook.com/bortolottiaudio" class="facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </li>
