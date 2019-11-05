@@ -161,15 +161,21 @@ header#main-header .container nav ul li:last-child a {
 
 .banner .carousel .carousel-item img {
   min-height: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .banner .carousel .carousel-item.active img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: -webkit-transform 12s;
-  transition: -webkit-transform 12s;
-  transition: transform 12s;
-  transition: transform 12s, -webkit-transform 12s;
+  -webkit-transition: -webkit-transform 12s ease;
+  transition: -webkit-transform 12s ease;
+  transition: transform 12s ease;
+  transition: transform 12s ease, -webkit-transform 12s ease;
 }
 
 .banner .carousel .carousel-item.active .carousel-caption {

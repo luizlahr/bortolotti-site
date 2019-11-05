@@ -1,7 +1,7 @@
 <section class="banner">
     <div id="bannerCarousel" class="carousel slide">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item" id="slide-1">
                 <img src="{{ asset("/img/slides/slide-1.jpg") }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5>First slide label</h5>
@@ -33,6 +33,8 @@
             ride: true,
             interval: 8000,
         });
+
+        $(".banner #slide-1").addClass("active");
     })
 </script>
 @endpush
