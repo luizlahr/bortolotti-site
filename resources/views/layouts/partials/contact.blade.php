@@ -3,7 +3,8 @@
         <h1 class="title">
             Fale Conosco
         </h1>
-        <form action="">
+        <form action="{{ route("contact.send") }}" method="POST">
+            @csrf
 
             <input class="form-control" type="text" name="name" id="name" placeholder="Nome*">
             <input class="form-control" type="email" name="email" id="email" placeholder="E-mail*">

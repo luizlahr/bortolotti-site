@@ -5,6 +5,7 @@
   font-family: "Raleway", "Roboto", Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  outline: 0;
 }
 
 body {
