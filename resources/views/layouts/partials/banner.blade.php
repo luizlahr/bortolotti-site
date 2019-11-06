@@ -2,24 +2,25 @@
     <div id="bannerCarousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item" id="slide-1">
-                <img src="{{ asset("/img/slides/slide-1.jpg") }}" class="d-block w-100" alt="...">
+                <img src="{{ asset("/img/slides/slide_1.jpg") }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h5>Tenha equipamentos de qualidade</h5>
+                    <p> Os amplificadores Bortolotti Áudio são fabricados de acordo com as necessidades de som que você
+                        precisa</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset("/img/slides/slide-2.jpg") }}" class="d-block w-100" alt="...">
+                <img src="{{ asset("/img/slides/slide_2.jpg") }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h5>Restauração</h5>
+                    <p>Serviços de restauração em rádios antigos e afins</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset("/img/slides/slide-3.jpg") }}" class="d-block w-100" alt="...">
+                <img src="{{ asset("/img/slides/slide_3.jpg") }}" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h5>Audiotécnica</h5>
+                    <p>Você pode confiar em nossos serviços de manutenções.</p>
                 </div>
             </div>
         </div>

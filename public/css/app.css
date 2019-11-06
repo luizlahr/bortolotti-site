@@ -168,6 +168,7 @@ header#main-header .container nav ul li:last-child a {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  opacity: 0.4;
 }
 
 .banner .carousel .carousel-item.active img {
