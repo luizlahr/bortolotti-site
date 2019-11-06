@@ -23,7 +23,6 @@
 
 @push("scripts")
 <script>
-
     $("#btnContact").click(function(e){
         e.preventDefault();
 
@@ -48,7 +47,7 @@
         .fail(function(data) {
             loader(false);
             $(".alert-msg").removeClass("show")
-            $(".alert-msg").html(data.error);
+            $(".alert-msg").html("Opps... Tivemos um problema ao enviar o e-mail. Tente novamente mais tarde!");
             $(".alert-msg").addClass("error");
             $(".alert-msg").addClass("show");
             $("#btnContact").attr("disabled", false);
@@ -56,4 +55,3 @@
     });
 </script>
 @endpush
-
