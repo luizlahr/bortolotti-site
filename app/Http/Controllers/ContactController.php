@@ -13,11 +13,10 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-
-        \Log::debug($data);
-
         try {
-            Mail::to("atendimento@bortolottiaudio.com.br")->send(new ContactMail($data));
+            Mail::to("atendimento@bortolottiaudio.com.br")
+                ->subject($data["subject"])
+                ->send(new ContactMail($data));
         } catch (Exception $e) {
             \Log::debug($e);
             return response()
