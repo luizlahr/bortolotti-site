@@ -17,13 +17,13 @@ class ContactController extends Controller
         \Log::debug($data);
 
         try {
-            Mail::to("boivl@hotmail.com")->send(new ContactMail($data));
+            Mail::to("atendimento@bortolottiaudio.com.br")->send(new ContactMail($data));
         } catch (Exception $e) {
             \Log::debug($e);
             return response()
-                ->json(["error"=> "Erro ao enviar e-mail!"]);
+                ->json(["error" => "Erro ao enviar e-mail!"]);
         }
 
-        return response()->json(["message"=>"E-mail salvo com sucesso!"]);
+        return response()->json(["message" => "E-mail enviado com sucesso!"]);
     }
 }
