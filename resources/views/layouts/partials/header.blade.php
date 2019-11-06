@@ -44,7 +44,7 @@
         }
     }
 
-    $('li a').click(function(e){
+    $('#main-header li a, .btn-contact').click(function(e){
         e.preventDefault();
 
         if ($(this).attr('href') == "#") {

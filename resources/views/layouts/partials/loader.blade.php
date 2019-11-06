@@ -1,0 +1,21 @@
+<div class="loader" id="loader">
+    <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+    </div>
+</div>
+
+
+@push("scripts")
+<script>
+    function loader(show = true) {
+        if (show)
+            document.getElementById("loader").classList.add("show");
+        else
+            document.getElementById("loader").classList.remove("show");
+    }
+</script>
+@endpush

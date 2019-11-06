@@ -17,7 +17,6 @@ Route::get('/', function () {
     return view('home');
 })->name("home");
 
-Route::post("/", "ContactController@store")->name("contact.send");
 Route::get('/mail', function () {
 
     $data = [

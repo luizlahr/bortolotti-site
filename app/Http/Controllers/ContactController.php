@@ -6,6 +6,7 @@ use App\Mail\ContactMail;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Response;
 
 class ContactController extends Controller
 {
@@ -13,12 +14,16 @@ class ContactController extends Controller
     {
         $data = $request->all();
 
+        \Log::debug($data);
+
         try {
             Mail::to("boivl@hotmail.com")->send(new ContactMail($data));
         } catch (Exception $e) {
             \Log::debug($e);
+            return response()
+                ->json(["error"=> "Erro ao enviar e-mail!"]);
         }
 
-        return redirect()->back();
+        return response()->json(["message"=>"E-mail salvo com sucesso!"]);
     }
 }

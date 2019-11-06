@@ -2,25 +2,37 @@
     <div class="container">
         <ul class="owl-carousel">
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/antera.svg") }}" class="antera" alt="Antera">
             </li>
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/orange.svg") }}" class="orange" alt="Orange">
             </li>
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/yamaha.svg") }}" class="yamaha" alt="Yamaha">
             </li>
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/laney.svg") }}" class="laney" alt="Laney">
             </li>
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/mesa.svg") }}" class="mesa" alt="Mesa">
             </li>
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/behringer.svg") }}" class="behringer" alt="Behringer">
             </li>
             <li>
-                <img src="{{ asset("/img/brand_oversound.svg") }}" alt="Oversound">
+                <img src="{{ asset("/img/brands/audioleader.svg") }}" class="audioleader" alt="Audioleader">
+            </li>
+            <li>
+                <img src="{{ asset("/img/brands/oversound.svg") }}" class="oversound" alt="Oversound">
+            </li>
+            <li>
+                <img src="{{ asset("/img/brands/meteoro.svg") }}" class="meteoro" alt="Meteoro">
+            </li>
+            <li>
+                <img src="{{ asset("/img/brands/jbl.svg") }}" class="jbl" alt="Jbl">
+            </li>
+            <li>
+                <img src="{{ asset("/img/brands/etelj.svg") }}" class="etelj" alt="Etelj">
             </li>
         </ul>
     </div>

@@ -39,8 +39,32 @@
             <h1 class="title">
                 Localização
             </h1>
-            <div class="map"></div>
+            <div class="map" id="map"></div>
         </div>
 
     </div>
 </section>
+
+@push("scripts")
+<script>
+    
+</script>
+
+<script>
+    window.onload = function() {
+        initMap();
+    };
+
+    function initMap() {
+        // The location of Uluru, -22.396062, -47.570532
+        var ba = { lat: -22.396046, lng: -47.570468 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 17, center: ba });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: ba, map: map });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB10Xvg5CDcIo4aRvlhCU-byXWsye-jux4&callback=initMap">
+</script>
+@endpush

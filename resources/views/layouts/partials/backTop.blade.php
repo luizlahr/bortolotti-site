@@ -1,12 +1,19 @@
-<a href="#" id="backTop" onClick="topFunction()" title="Voltar ao topo">
+<a href="#" id="backTop" title="Voltar ao topo">
 <i class="fas fa-arrow-up"></i>
 </a>
 
 @push("scripts")
 <script>
-function topFunction() {
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
-}
+    function topFunction() {
+        $("html").animate({ scrollTop: 0 }, 1000);
+        return false;
+    }
+
+    $(function(){
+        $("#backTop").click(function(e) {
+            e.preventDefault();
+            topFunction();
+        })
+    })
 </script>
 @endpush

@@ -24,6 +24,36 @@ section.brands {
                 img {
                     width: auto;
                     max-height: 80%;
+                    max-width: 80%;
+
+                    &.antera {
+                        max-height: 70%;
+                    }
+
+                    &.oversound {
+                        max-height: 70%;
+                    }
+
+                    &.jbl {
+                        max-height: 50%;
+                    }
+
+                    &.etelj {
+                        margin-top: 10px;
+                        max-height: 50%;
+                    }
+
+                    &.orange {
+                        margin-top: 20px;
+                    }
+
+                    &.laney {
+                        max-width: 70%;
+                    }
+
+                    &.audioleader {
+                        max-width: 90%;
+                    }
                 }
             }
         }

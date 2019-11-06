@@ -12,4 +12,5 @@
 @include("layouts.partials.contact")
 @include("layouts.partials.footer")
 @include("layouts.partials.backTop")
+@include("layouts.partials.loader")
 @endsection
