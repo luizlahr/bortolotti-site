@@ -91,12 +91,54 @@ header#main-header .container > a img.logo {
   width: 200px;
 }
 
+header#main-header .container a.menu-toggle {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 3;
+          order: 2;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  color: #414143;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 100%;
+  padding: 0 15px;
+}
+
+header#main-header .container a.menu-toggle:hover,
+header#main-header .container a.menu-toggle.active {
+  color: #f08467;
+}
+
+@media (min-width: 700px) {
+  header#main-header .container a.menu-toggle {
+    display: none;
+    -webkit-box-ordinal-group: 4;
+            order: 3;
+  }
+}
+
 header#main-header .container nav ul {
   display: -webkit-box;
   display: flex;
   height: 100%;
   margin: 0;
   list-style: none;
+  -webkit-box-ordinal-group: 4;
+          order: 3;
+}
+
+@media (max-width: 700px) {
+  header#main-header .container nav ul {
+    display: none;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+  }
 }
 
 header#main-header .container nav ul li a {

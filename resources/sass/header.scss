@@ -17,11 +17,44 @@ header#main-header {
             }
         }
 
+        a.menu-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 2;
+
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            color: #414143;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            height: 100%;
+            padding: 0 15px;
+
+            &:hover,
+            &.active {
+                color: $main-color;
+            }
+
+            @media (min-width: 700px) {
+                display: none;
+                order: 3;
+            }
+        }
+
         nav ul {
             display: flex;
             height: 100%;
             margin: 0;
             list-style: none;
+            order: 3;
+
+            @media (max-width: 700px) {
+                display: none;
+                order: 2;
+            }
 
             li {
                 a {

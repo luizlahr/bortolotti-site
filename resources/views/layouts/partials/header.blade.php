@@ -3,6 +3,9 @@
         <a href="">
             <img src="{{ asset("/img/logo.svg") }}" alt="Logo" class="logo">
         </a>
+        <a href="" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </a>
         <nav>
             <ul>
                 <li>
@@ -23,7 +26,7 @@
 </header>
 
 @push("scripts")
-    <script>
+<script>
     window.onscroll = function() {stickyHeader()};
 
     // Get the header
@@ -58,4 +61,3 @@
     });
 </script>
 @endpush
-
