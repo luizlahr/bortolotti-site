@@ -14,7 +14,7 @@ class ContactController extends Controller
     {
         $data = $request->all();
         try {
-            Mail::to("atendimento@bortolottiaudio.com.br")
+            Mail::to("lcborto@bol.com.br")
                 ->send(new ContactMail($data));
         } catch (Exception $e) {
             \Log::debug($e);
